@@ -40,5 +40,15 @@ public class TextServiceTest implements SorcerConstants {
 
     }
 
+    @Test
+    public void duplicateDeleter() throws Exception {
+        Task t2 = task("t2",
+                sig("correctText", TextService.class, "DuplicateDeleter"),
+                context("text", in("text", "Hello,, hello... hello.... Hello hEllo \\n He1llo hE1llo heLlo World;::, hello."), result("text")));
+
+
+        logger.info("t2 value: " + value(t2));
+    }
+
 
 }

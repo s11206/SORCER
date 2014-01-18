@@ -34,7 +34,7 @@ public class TextServiceTest implements SorcerConstants {
     public void spellcheckerTest() throws Exception {
         Task t1 = task("t1",
                 sig("correctText", TextService.class, "Spellchecker"),
-                context("text", result("text")));
+                context("text", in("text", "Istatne jast, ccy meteda komuniWacji jest dobcana."), result("text")));
 
         logger.info("t1 value: " + value(t1));
 

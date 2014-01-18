@@ -57,6 +57,7 @@
 			<classpath refid="project.classpath" />
 			<in name="sorcer.assignment" />
             <topclass name="sorcer.assignment.Spellchecker"/>
+	    <topclass name="sorcer.assignment.Formatter"/>
             <topclass name="sorcer.assignment.DuplicateDeleter"/>
 			<fileset dir="${iGrid.home}/configs">
 				<filename name="sorcer/util/sorcer.env" />
